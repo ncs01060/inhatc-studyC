@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main(void){
+    int a;
+    scanf("%d",&a);
+    printf("%d\n",a);
+    if(a > 10){
+        printf("Larger than 10.");
+    }
+    return 0;
+}

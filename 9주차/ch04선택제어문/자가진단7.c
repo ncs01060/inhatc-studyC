@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+
+int main(void){
+    char a;
+    scanf("%c",&a);
+    if(a == 'A'){
+        printf("Excellent");
+    } else if(a == 'B') {
+        printf("Good");
+    } else if(a == 'C'){
+        printf("Usually");
+    } else {
+        printf("error");
+    }
+    return 0;
+}
