@@ -1,18 +1,15 @@
-#include <stdio.h>
+﻿#include <stdio.h>
 
-struct Person
-{
-    char name[21];
-    char schoolName[21];
-    int grade;
-};
-
-
-int main(void){
+int main(){
+    struct Person{
+        char name[30];
+        char sch[30];
+        int age;
+    };
     struct Person p;
-    scanf("%20s %20s %d",p.name, p.schoolName, &p.grade);
-    printf("Name : %s\n",p.name);
-    printf("School : %s\n",p.schoolName);
-    printf("Grade : %d",p.grade);
+    scanf("%29s", p.name);
+    scanf("%29s", p.sch);
+    scanf("%d", &p.age);
+    printf("Name : %s\nSchool : %s\nGrade : %d", p.name, p.sch, p.age);
     return 0;
 }
